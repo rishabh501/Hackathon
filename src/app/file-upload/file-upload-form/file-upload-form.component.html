@@ -1,0 +1,36 @@
+<div>
+  <h4>Upload a scanned PFT file</h4>
+  <div class="es-popup-body">
+    <div class="es-form">
+      <div class="es-content-box">
+        <div class="es-form-field">
+          <div><!--
+            <input
+              id="query-attachment-file-name"
+              type="text"
+              size="40"
+              disabled
+              class="es-input-small -es-disabled"
+            /> -->
+            <input
+              id="query-attachment-file"
+              type="file"
+              (change)="attachFile($event)"
+              size="40"
+            />
+          </div>
+        </div>
+
+        <br/>
+        <button
+          type="button"
+          class="es-button -es-primary"
+          (click)="uploadFile()"
+        >Upload File
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
